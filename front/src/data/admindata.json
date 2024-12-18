@@ -1,22 +1,22 @@
 [
     {
-      "username": "ayush.khambayate22@vit.edu",
-      "password": "aarti.agarkar@vit.edu"
+      "username": "admin1",
+      "password": "adminpass1"
     },
     {
-      "username": "admin2@gmail.com",
+      "username": "admin2",
       "password": "adminpass2"
     },
     {
-      "username": "admin3@gmail.com",
+      "username": "admin3",
       "password": "adminpass3"
     },
     {
-      "username": "admin4@gmail.com",
+      "username": "admin4",
       "password": "adminpass4"
     },
     {
-      "username": "admin5@gmail.com",
+      "username": "admin5",
       "password": "adminpass5"
     }
   ]
