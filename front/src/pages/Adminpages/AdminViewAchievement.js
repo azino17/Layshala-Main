@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import jsPDF from "jspdf";
 import { Table, Button, Modal, InputGroup, FormControl } from "react-bootstrap";
-const dotenv = require('dotenv');
+
 
 const AdminViewAchievement = () => {
   const [achievements, setAchievements] = useState([]);
