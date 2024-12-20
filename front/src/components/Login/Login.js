@@ -33,17 +33,18 @@ const Login = () => {
       const endpoint =
         userType === "student"
           ? `${process.env.REACT_APP_BACKEND_URL}/api/auth/login`
-          : `${process.env.REACT_APP_BACKEND_URL}/api/admin/login`
+          : `${process.env.REACT_APP_BACKEND_URL}/api/admin/login`;
 
       const payload =
-        userType === "student"
-          ? { email, password }
-          : { username, password };
+        userType === "student" ? { email, password } : { username, password };
 
       const response = await axios.post(endpoint, payload);
       const { token } = response.data;
 
-      localStorage.setItem(userType === "student" ? "authToken" : "AdminToken", token);
+      localStorage.setItem(
+        userType === "student" ? "authToken" : "AdminToken",
+        token
+      );
 
       // Show success toast
       toast.success("Login Successful!", {
@@ -195,8 +196,12 @@ const Login = () => {
             />
           </Form.Group>
 
-          <Button type="submit" className="w-100" disabled={loading}>
+          {/* <Button type="submit" className="w-100" disabled={loading}>
             {loading ? <Spinner animation="border" size="sm" /> : "Log in"}
+          </Button> */}
+
+          <Button type="submit" className="w-100">
+            Log In
           </Button>
         </form>
       </div>

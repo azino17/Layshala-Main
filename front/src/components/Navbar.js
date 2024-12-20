@@ -182,27 +182,27 @@ const Navbar = () => {
                 className="navbar-nav ms-auto mb-2 mb-lg-0"
                 style={{ fontFamily: "Open Sans, sans-serif" }}
               >
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
                   <Link className="nav-link active" aria-current="page" to="/">
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
                   <Link className="nav-link" to="#">
                     About us
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
                   <Link className="nav-link" to="/login">
                     Log in
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
                   <Link className="nav-link" to="/register">
                     Sign up
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
                   <Link className="nav-link" to="/contact">
                     Contact us
                   </Link>
